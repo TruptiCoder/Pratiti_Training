@@ -1,0 +1,12 @@
+package com.trupti;
+
+import com.trupti.a.A;
+import com.trupti.b.B;
+
+public class MainInteritDemo {
+	public static void main(String[] args) {
+		B b = new A(1);
+		// A a = new B(); // Not possible
+		a.methodB();
+	}
+}

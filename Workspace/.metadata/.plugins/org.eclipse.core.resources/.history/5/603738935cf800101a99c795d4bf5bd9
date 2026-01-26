@@ -1,0 +1,9 @@
+package com.trupti;
+
+import com.trupti.a.A;
+
+public class MainInteritDemo {
+	public static void main(String[] args) {
+		A a = new A();
+	}
+}

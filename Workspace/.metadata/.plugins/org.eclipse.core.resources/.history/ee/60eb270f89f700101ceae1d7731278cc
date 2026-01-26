@@ -1,0 +1,11 @@
+package com.trupti;
+
+public class MainStudent {
+	public static void main(String[] args) {
+		Student student = new Student();
+		student.setAge(34);
+		
+		Student.setCount(10);
+		System.out.println(Student.getCount());
+	}
+}

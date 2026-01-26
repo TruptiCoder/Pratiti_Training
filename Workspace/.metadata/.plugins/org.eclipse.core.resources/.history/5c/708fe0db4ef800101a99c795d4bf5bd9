@@ -1,0 +1,16 @@
+package com.trupti;
+
+public class YourHouse extends House {
+
+	@Override
+	public void washRoom() {
+		System.out.println("Washroom with Jakuzzi");
+		
+	}
+
+	@Override
+	public void garden() {
+		System.out.println("Big Garden");
+	}
+	
+}

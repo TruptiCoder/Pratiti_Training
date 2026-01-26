@@ -1,0 +1,17 @@
+package com.trupti;
+
+import java.util.Scanner;
+
+public class ScannerDemo {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Enter your name: ");
+		String name = scanner.next();
+		System.out.println("Enter City: ");
+		String city = scanner.next();
+		System.out.println("Enter age: ");
+		int age = scanner.nextInt();
+		System.out.printf("The name is %s, city is %s and age is %d", name, city, age);
+	}
+}

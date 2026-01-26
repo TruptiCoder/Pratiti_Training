@@ -1,0 +1,21 @@
+package com.trupti;
+
+public class StringDemo {
+	public static void main(String[] args) {
+		
+		// Strings are immutable
+		String s = "Trupti";
+		String s1 = "Trupti";
+		String s2 = new String("Trupti");
+		String s3 = "Balbudhe";
+		String s4 = "Trupti" + "Balbudhe";
+		String s5 = "TruptiBalbudhe";
+		String s6 = s1 + s3;
+		
+		System.out.println(s5 == s4);
+		
+//		System.out.println(s);
+//		String s2 = s.toUpperCase(); // This will not change s
+//		System.out.println(s2);
+	}
+}

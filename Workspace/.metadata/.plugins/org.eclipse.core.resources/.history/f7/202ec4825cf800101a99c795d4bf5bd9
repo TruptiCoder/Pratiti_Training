@@ -1,0 +1,19 @@
+package com.trupti.a;
+
+public class A {
+	public A() {
+		System.out.println("Constructor A");
+	}
+	
+	public A(int i) {
+		System.out.println("Constructor A with int value: " + i);
+	}
+	
+	public void methodA() {
+		System.out.println("methodA in class A");
+	}
+	
+	public void methodAA() {
+		System.out.println("methodAA in class A");
+	}
+}

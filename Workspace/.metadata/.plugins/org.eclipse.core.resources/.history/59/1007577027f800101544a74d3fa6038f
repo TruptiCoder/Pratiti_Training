@@ -1,0 +1,11 @@
+package com.trupti.model;
+
+public class Employee {
+	public Employee() {
+		System.out.println("Employee object created");
+	}
+	
+	public Employee(int id) {
+		System.out.println("Employee id " + id);
+	}
+}

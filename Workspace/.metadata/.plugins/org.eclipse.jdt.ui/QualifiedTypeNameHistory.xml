@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.INSTANCEOF"/>
+    <fullyQualifiedTypeName name="com.trupti.ThingsInClass"/>
+    <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
+    <fullyQualifiedTypeName name="com.trupti.Student"/>
+    <fullyQualifiedTypeName name="java.math.BigInteger"/>
+    <fullyQualifiedTypeName name="com.trupti.ABC"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.xml.internal.serializer.ToStream"/>
+    <fullyQualifiedTypeName name="jdk.vm.ci.meta.JavaKind.FormatWithToString"/>
+    <fullyQualifiedTypeName name="com.trupti.model.Department"/>
+    <fullyQualifiedTypeName name="java.nio.channels.AsynchronousSocketChannel"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.trupti.OverloadingDemo"/>
+    <fullyQualifiedTypeName name="com.trupti.Halwa"/>
+    <fullyQualifiedTypeName name="com.trupti.model.Employee"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="com.trupti.EmployeeManagement"/>
+    <fullyQualifiedTypeName name="com.trupti.House"/>
+    <fullyQualifiedTypeName name="java.awt.Toolkit"/>
+    <fullyQualifiedTypeName name="com.trupti.YourHouse"/>
+    <fullyQualifiedTypeName name="com.trupti.MyHouse"/>
+    <fullyQualifiedTypeName name="com.trupti.a.A"/>
+    <fullyQualifiedTypeName name="com.trupti.b.B"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="com.trupti.c.C"/>
+    <fullyQualifiedTypeName name="com.trupti.assignment.Employee"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>

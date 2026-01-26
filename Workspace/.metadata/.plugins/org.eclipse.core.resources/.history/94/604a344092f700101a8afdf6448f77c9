@@ -1,0 +1,25 @@
+package com.trupti;
+
+class ABC{
+	String name;
+	public ABC(String name) {
+		this.name = name;
+	}
+	
+	@Override
+	public String toString() {
+        return this.name;
+    }
+}
+public class UnderstandObject {
+	
+	Object o;
+	public static void main(String[] args) {
+		ABC abc = new ABC("Trupti");
+		
+		System.out.println(abc);
+		System.out.println(abc.getClass());
+		System.out.println(abc.hashCode());
+		System.out.println(Integer.toHexString(abc.hashCode()));
+	}
+}

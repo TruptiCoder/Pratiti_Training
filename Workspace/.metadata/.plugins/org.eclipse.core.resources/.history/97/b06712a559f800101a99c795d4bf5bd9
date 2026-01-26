@@ -1,0 +1,24 @@
+package com.trupti;
+
+public class OverloadingDemo {
+	public OverloadingDemo() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public OverloadingDemo(int x) {
+		
+	}
+	
+	public void over1() {
+		
+	}
+	
+	public void over1(byte w) {
+		System.out.println("byte wala " + w);
+	}
+	
+	public int over1(int x) {
+		System.out.println("int wala " + x);
+		return 0;
+	}
+}

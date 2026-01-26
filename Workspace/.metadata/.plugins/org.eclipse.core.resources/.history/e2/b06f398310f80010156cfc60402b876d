@@ -1,0 +1,45 @@
+package com.trupti;
+
+public class day1 {
+
+	public static void main(String[] args) {
+		
+		// Question 1
+		int Integer = 23;
+		char String = 'A';
+		
+		System.out.println(Integer);
+		System.out.println(String);
+		
+		// Question 2
+//		int[] arr = {120, 200, 016};
+//		for(int i = 0; i < arr.length; i++) {
+//			System.out.print(arr[i] + " ");
+//		}
+		
+		// Question 3
+//		int[] A = {};
+//		int[] B = {1, 2, 3};
+		
+		// Question 4
+//		int vec[] = {0, 2, 4, 1, 3};
+//		for(int i = 0; i < vec.length; i++) {
+//			vec[i] = vec[(vec[i] + 3) % vec.length];
+//		}
+//		System.out.println(vec[1]);
+		
+		// Question 5
+//		String str = "abcde";
+//		System.out.println(str.substring(1, 3));
+//		System.out.println(str.indexOf('t'));
+		
+		// Question 6 - How many objects are created
+//		String a = new String("Trupti"); // 2 -> one in string constant pool (SCP) and 1 in heap
+//		String b = new String("Trupti"); // 1 -> one in heap. 
+//		String c = "Trupti"; // 0 -> already exist in SCP to reference this to it
+//		String d = "Trupti"; // 0 -> same as above
+		
+		
+	}
+
+}

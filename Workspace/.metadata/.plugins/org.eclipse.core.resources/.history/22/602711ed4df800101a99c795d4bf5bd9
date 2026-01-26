@@ -1,0 +1,11 @@
+package com.trupti;
+
+public class MyHouse extends House {
+
+	@Override
+	public void washRoom() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

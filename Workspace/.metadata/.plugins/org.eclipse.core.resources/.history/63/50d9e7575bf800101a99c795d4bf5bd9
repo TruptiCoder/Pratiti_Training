@@ -1,0 +1,19 @@
+package com.trupti.b;
+
+public class B {
+	public B() {
+		System.out.println("Constructor B");
+	}
+	
+	public B(int i) {
+		System.out.println("Constructor B with int value: " + i);
+	}
+	
+	public void methodB() {
+		System.out.println("methodB in class B");
+	}
+	
+	public void methodBB() {
+		System.out.println("methodBB in class B");
+	}
+}

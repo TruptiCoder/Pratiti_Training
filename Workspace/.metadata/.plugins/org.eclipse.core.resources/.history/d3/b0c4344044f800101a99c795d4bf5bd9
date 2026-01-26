@@ -1,0 +1,25 @@
+package com.trupti;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+public class EmployeeManagement {
+	public static void main(String[] args) throws IOException {
+		
+		String s1 = args[0];
+		String s2 = args[1];
+		
+		int i1 = Integer.parseInt(s1);
+		Integer i2 = Integer.valueOf(s2);
+		
+		System.out.println(i1 + i2);
+		
+		InputStream is = System.in;
+		
+		int a;
+		while((a = is.read()) == 13) {
+			System.out.print((char)a);
+		}
+		System.out.println();
+	}
+}

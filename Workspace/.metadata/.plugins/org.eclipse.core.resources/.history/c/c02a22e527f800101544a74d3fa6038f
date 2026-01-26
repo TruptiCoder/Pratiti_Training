@@ -1,0 +1,19 @@
+package com.trupti;
+
+import com.trupti.model.*;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		// This is fully qualified class name
+		// new com.trupti.model.Employee();
+		
+		
+		Employee employee = new Employee(1);
+		int id = employee.getId();
+		System.out.println(id);
+		
+		new Department();
+	}
+
+}

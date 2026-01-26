@@ -1,0 +1,48 @@
+package com.trupti;
+
+interface A {
+	void aa();
+	
+	default public void aaM() {
+		System.out.println("aaM in A");
+	}
+}
+
+interface B {
+	void bb();
+	default public void aaM() {
+		System.out.println("aaM in B");
+	}
+}
+
+class Z implements A, B {
+
+	@Override
+	public void aa() {
+		System.out.println("aa in Z");
+		aaM();
+	}
+
+	@Override
+	public void bb() {
+		System.out.println("bb in Z");
+		aaM();
+	}
+
+	@Override
+	public void aaM() {
+		B.super.aaM();
+	}
+	
+}
+
+public class InterfaceDemo {
+	public static void main(String[] args) {
+		A a = new Z();
+		a.aa();
+		a.aaM();
+		
+		B b = new Z();
+		b.bb();
+	}
+}

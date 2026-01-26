@@ -1,0 +1,25 @@
+package com.trupti;
+
+interface A {
+	void aa();
+}
+
+interface B {
+	
+}
+
+class Z implements A, B {
+
+	@Override
+	public void aa() {
+		System.out.println("aa in Z");
+	}
+	
+}
+
+public class InterfaceDemo {
+	public static void main(String[] args) {
+		A a = new Z();
+		B a = new Z();
+	}
+}

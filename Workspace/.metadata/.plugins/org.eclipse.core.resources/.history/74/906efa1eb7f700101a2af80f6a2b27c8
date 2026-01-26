@@ -1,0 +1,13 @@
+package com.trupti;
+
+public class day1 {
+
+	public static void main(String[] args) {
+		int Integer = 23;
+		char String = 'A';
+		
+		System.out.println(Integer);
+		System.out.println(String);
+	}
+
+}

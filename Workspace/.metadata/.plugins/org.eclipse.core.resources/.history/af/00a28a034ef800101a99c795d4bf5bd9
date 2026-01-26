@@ -1,0 +1,7 @@
+package com.trupti;
+
+public class AbstractDemo {
+	public static void main(String[] args) {
+		House house;
+	}
+}

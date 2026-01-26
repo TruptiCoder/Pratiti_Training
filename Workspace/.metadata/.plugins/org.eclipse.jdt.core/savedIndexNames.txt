@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+C:\Users\LENOVO\Documents\Pratiti_Training\Workspace\.metadata\.plugins\org.eclipse.jdt.core
+1773393425.index
+1327518921.index
+4038756267.index
+557760305.index
+1865797976.index

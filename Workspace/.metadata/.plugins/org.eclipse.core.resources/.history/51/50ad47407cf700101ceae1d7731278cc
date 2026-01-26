@@ -1,0 +1,11 @@
+package com.trupti;
+
+public class MainApp {
+	public static void main(String[] args) {
+		ThingsInClass thingsInClass = new ThingsInClass();
+		ThingsInClass thingsInClass2 = new ThingsInClass();
+		
+		int x = thingsInClass.x;
+		System.out.println(x);		
+	}
+}
