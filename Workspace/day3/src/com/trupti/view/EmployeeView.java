@@ -61,8 +61,7 @@ public class EmployeeView {
 	}
 
 	private void updateEmployees() {
-		// TODO Auto-generated method stub
-		
+		// Todo: implement updateEmployees method
 	}
 
 	private void exitEmployee() {
