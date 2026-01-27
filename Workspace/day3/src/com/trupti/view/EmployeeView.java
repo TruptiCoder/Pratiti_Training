@@ -7,6 +7,7 @@ import com.trupti.MainApp;
 import com.trupti.model.Employee;
 import com.trupti.service.EmployeeService;
 
+
 public class EmployeeView {
 	
 	private static final Logger log = Logger.getLogger(MainApp.class.getName());
@@ -26,10 +27,11 @@ public class EmployeeView {
 			System.out.println("1. Add Employee");
 			System.out.println("2. View Employee");
 			System.out.println("3. Update Employee");
+			System.out.println("4. Delete Employee");
 			System.out.println("5. Exit");
 			
 			System.out.println("Enter Choice...");
-			choice = sc.nextInt();
+			choice = getInteger();
 			
 			selectedOption(choice);
 		} while(choice != 5);
@@ -49,6 +51,10 @@ public class EmployeeView {
 				updateEmployees();
 				break;
 			}
+			case 4: {
+				DeleteEmployees();
+				break;
+			}
 			case 5: {
 				exitEmployee();
 				break;
@@ -59,9 +65,82 @@ public class EmployeeView {
 			}
 		}
 	}
+	
+	private int getInteger(){
+		while (!sc.hasNextInt()) {
+	        System.out.println("Please enter a valid integer:");
+	        sc.next(); // discard invalid input
+	    }
+	    return sc.nextInt();
+	}
+
+	private void DeleteEmployees() {
+		System.out.println("Enter id of Employee you want to delete");
+		int empId = getInteger();
+		if(service.verifyId(empId)) {
+			service.deleteEmployee(empId);
+		}
+	}
 
 	private void updateEmployees() {
-		// Todo: implement updateEmployees method
+		System.out.println("Enter id of Employee you want to update");
+		int empId = getInteger();
+		
+		if(service.verifyId(empId)) {
+			
+			System.out.println("1. Update Id");
+			System.out.println("2. Update name");
+			System.out.println("3. Update city");
+			System.out.println("4. Update name and city both");
+			System.out.println("Enter your choice");
+			
+			int choice = getInteger();
+			
+			switch(choice) {
+				case 1: {
+					System.out.println("Enter new Id: ");
+					int newEmpId = getInteger();
+					if(!service.verifyId(newEmpId)) {
+						service.updateId(empId, newEmpId);		
+						System.out.println("id: " + empId + " is updated to " + newEmpId);
+					}
+					break;
+				}
+				case 2: {
+					System.out.println("Enter new name");
+					String newName = sc.next();
+					service.updateName(empId, newName);
+					System.out.println("For id: " + empId + " name is updated to " + newName);
+					break;
+				}
+				case 3: {
+					System.out.println("Enter new city");
+					String newCity = sc.next();
+					service.updateCity(empId, newCity);
+					System.out.println("For id: " + empId + " city is updated to " + newCity);
+					break;
+				}
+				case 4: {
+					System.out.println("Enter new name");
+					String newName = sc.next();
+					System.out.println("Enter new city");
+					String newCity = sc.next();
+					service.updateNameAndCity(empId, newName, newCity);
+					System.out.println("For id: " + empId + " name is " + newName + " and city is " + newCity);
+					break;
+				}
+				default: {
+					log.warning("Unexpected value " + choice);
+					throw new IllegalArgumentException("Unexpected Choice " + choice);
+				}
+			}
+			
+		} else System.out.println("Id: " + empId + " does not exists");
+		
+		System.out.println("Do you want to continue to update? (Y/N)");
+		String ch = sc.next();
+		
+		if(ch.equalsIgnoreCase("Y")) updateEmployees();
 	}
 
 	private void exitEmployee() {
@@ -77,7 +156,7 @@ public class EmployeeView {
 		
 		do {
 			System.out.println("Enter Employee Id");
-			int empId = sc.nextInt();
+			int empId = getInteger();
 			sc.nextLine();
 			
 			if(service.verifyId(empId)) {

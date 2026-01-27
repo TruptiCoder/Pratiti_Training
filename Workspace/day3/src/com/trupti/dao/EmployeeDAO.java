@@ -36,6 +36,13 @@ public class EmployeeDAO {
 		}
 	}
 	
+	public Employee getEmployeeById(int empId) {
+		for(Employee e : employees) {
+			if(e.getEmpId() == empId) return e;
+		}
+		return null;
+	}
+	
 	public Employee[] getEmployees() {
 		Employee e[] = new Employee[getEmployeeCount()];
 		int idx = 0;
@@ -61,5 +68,23 @@ public class EmployeeDAO {
 			if(e != null) count++;
 		}
 		return count;
+	}
+
+	public void updateEmployee(int empId, int newEmpId, String empName, String empCity) {
+		for(int i = 0; i < employees.length; i++) {
+			if(employees[i] != null && employees[i].getEmpId() == empId) {
+				employees[i].setEmpId(newEmpId);
+				employees[i].setEmpName(empName);
+				employees[i].setEmpCity(empCity);
+			}
+		}
+	}
+
+	public void deleteEmployee(int empId) {
+		for(int i = 0; i < employees.length; i++) {
+			if(employees[i] != null && employees[i].getEmpId() == empId) {
+				employees[i] = null;
+			}
+		}
 	}
 }

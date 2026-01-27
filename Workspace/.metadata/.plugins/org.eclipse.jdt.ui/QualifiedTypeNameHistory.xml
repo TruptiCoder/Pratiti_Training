@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.INSTANCEOF"/>
     <fullyQualifiedTypeName name="com.trupti.ThingsInClass"/>
     <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
     <fullyQualifiedTypeName name="com.trupti.Student"/>
@@ -50,4 +49,7 @@
     <fullyQualifiedTypeName name="Multiply"/>
     <fullyQualifiedTypeName name="com.trupti.lambda.DisplayApp"/>
     <fullyQualifiedTypeName name="com.trupti.lambda.Display"/>
+    <fullyQualifiedTypeName name="com.trupti.exp.NotIntegerException"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.INSTANCEOF"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>
