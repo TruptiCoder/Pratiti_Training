@@ -1,5 +1,7 @@
 package com.trupti.lambda;
 
+import java.io.IOException;
+
 interface Display {
 	String show(String s);
 }
@@ -14,7 +16,7 @@ class DisplayApp {
 }
 
 public class Lambda2Demo {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		DisplayApp app = new DisplayApp();
 		
 		Display display = new Display() {
@@ -24,6 +26,8 @@ public class Lambda2Demo {
 				return "Welcom " + s;
 			}
 		};
+		
+//		Runtime.getRuntime().exec("notepad");
 		
 //		Display display2 = s -> System.out.println("Welcome " + s);
 		Display display2 = s -> "Welcome " + s;

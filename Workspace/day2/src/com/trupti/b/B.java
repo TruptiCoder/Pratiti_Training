@@ -11,7 +11,7 @@ public class B extends C {
 		System.out.println("Constructor B with int value: " + i);
 	}
 	
-	public final void methodB() {
+	public void methodB() {
 		System.out.println("methodB in class B");
 	}
 	
