@@ -1,5 +1,0 @@
-package com.trupti;
-
-public class ThingsInClass {
-	int x = 10;
-}

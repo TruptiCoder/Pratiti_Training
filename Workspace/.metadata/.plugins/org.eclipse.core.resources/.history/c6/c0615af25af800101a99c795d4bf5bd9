@@ -1,8 +1,0 @@
-package com.trupti.a;
-
-public class Snippet {
-	public void methodA() {
-			System.out.println("methodA in class A");
-		}
-}
-
