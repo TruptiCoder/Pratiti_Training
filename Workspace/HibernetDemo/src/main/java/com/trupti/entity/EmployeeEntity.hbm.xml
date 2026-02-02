@@ -1,0 +1,12 @@
+<hibernate-mapping>
+	<class name="com.kad.entity.EmployeeEntity"
+		table="employee_table1">
+		<id name="empId" type="java.lang.Integer">
+			<column name="eid" />
+			<generator class="assigned" />
+		</id>
+		<property name="empName" type="java.lang.String">
+			<column name="ename" />
+		</property>
+	</class>
+</hibernate-mapping>
