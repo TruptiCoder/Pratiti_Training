@@ -1,0 +1,26 @@
+main {
+    background-color: cadetblue;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: .2rem;
+    margin: .5rem;
+    padding: 0 .5rem;
+}
+
+button {
+    background-color: white;
+    border: 1px solid black;
+    padding: .5rem 1rem;
+    margin: .5rem;
+    border-radius: .2rem;
+}
+
