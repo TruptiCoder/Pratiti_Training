@@ -1,0 +1,20 @@
+<main class="m-5 p-3 text-bg-dark d-flex flex-column align-items-center justify-content-evenly rounded">
+    <h1>Home page</h1>
+    <h3>Events</h3>
+    <p>Count: {{ count }}</p>
+    <button class="btn btn-light" (click)="increment()">Click me</button>
+
+    <div class="mt-5 w-50">
+      <input class="form-control m-2" placeholder="Type..." (input)="onInput($event)" (keyup)="lastKey = $any($event).key">
+      <div class="d-flex justify-content-evenly">
+          <p>Value: {{ value }}</p>
+          <p>Last key: {{ lastKey }}</p>
+      </div>
+    </div>
+
+    <h3>Conditional Rendering</h3>
+    <button class="btn btn-danger" (click)="show.set(!show())">Toggle</button>
+    @if (show())  { <p>Now you see me!</p> } @else { <p>Now I'a hidden</p> }
+
+    <app-tp [uname]="value" [count]="count"></app-tp>
+</main>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Calculator } from '../../../calculator';
 
 @Component({
   selector: 'app-employee',
@@ -10,9 +11,16 @@ import { FormsModule } from '@angular/forms';
 export class Employee {
   counter = 0;
   uname = "Trupti";
+  total = 1;
+
+  constructor(private calculator: Calculator) {
+
+  }
+
   abc() {
-    console.log("ABC called")
+    this.total = this.calculator.addNubmers( 7, this.total);
+    // console.log("ABC called")
     ++this.counter;
-    console.log(this.uname, this.counter);
+    // console.log(this.uname, this.counter);
   }
 }

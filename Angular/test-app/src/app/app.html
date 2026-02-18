@@ -1,0 +1,5 @@
+<h1>Active Components: {{ counter.count$ | async }}</h1>
+<button (click)="showcomp1()">toggle Comp1</button>
+<button (click)="showcomp2()">toggle Comp2</button>
+@if (comp1) {<app-comp1></app-comp1>}
+@if (comp2) {<app-comp2></app-comp2>}

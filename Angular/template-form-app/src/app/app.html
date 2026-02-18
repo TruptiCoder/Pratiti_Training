@@ -1,0 +1,8 @@
+<div> 
+  <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)" > 
+     <input class="input-box" type= "text"  name="userName" placeholder="Enter Text" 
+        formControlName = "userName"> 
+     <input class="btn" type="submit"  value="Click here"> 
+  </form>
+</div> 
+<p>You have entered: {{userName}} </p>
