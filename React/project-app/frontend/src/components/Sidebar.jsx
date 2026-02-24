@@ -3,6 +3,7 @@ import Info from "./Info";
 
 function Sidebar({ employee }) {
   const user = useStore((state) => state.user);
+  const employees = useStore((state) => state.employees);
 
   const offcanvasId = `offcanvas-${employee.id}`;
 
@@ -26,7 +27,7 @@ function Sidebar({ employee }) {
       >
         <div className="offcanvas-header">
           <h5 className="offcanvas-title" id="offcanvasExampleLabel">
-            Total Employees: 3
+            Total Employees: {employees.length - 1}
           </h5>
           <button
             type="button"

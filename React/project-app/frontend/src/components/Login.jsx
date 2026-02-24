@@ -46,7 +46,7 @@ function Login() {
         </label>
         <input
           className="form-control"
-          type="email"
+          type="text"
           name="email"
           id="email"
           value={input.email}
@@ -70,7 +70,7 @@ function Login() {
 
       <input className="btn btn-primary" type="submit" value="Login" />
 
-      <span className="text-danger">{result}</span>
+      <span className="text-danger px-3">{result}</span>
     </form>
   );
 }

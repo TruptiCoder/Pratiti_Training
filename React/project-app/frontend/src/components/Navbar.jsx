@@ -14,14 +14,15 @@ function Navbar() {
   return (
     <nav className="navbar bg-body-tertiary px-5 py-3">
       <Link
-        className="text-bg-primary text-decoration-none p-2 rounded-5"
+        className="text-decoration-none p-3"
+        style={{borderRadius: "50%", backgroundColor: "#c65cff", color: "white"}}
         to="/"
       >
         Emp
       </Link>
       {!user && (
         <Link
-          className="text-decoration-none text-dark px-5 cursor-pointer"
+          className="btn btn-outline-danger text-decoration-none text-dark px-3 mx-5 cursor-pointer"
           to="/login"
         >
           Login
@@ -29,7 +30,7 @@ function Navbar() {
       )}
       {user && (
         <Link
-          className="text-decoration-none text-dark px-5 cursor-pointer"
+          className="btn btn-outline-danger text-decoration-none text-dark px-3 mx-5 cursor-pointer"
           to="/"
           onClick={logout}
         >

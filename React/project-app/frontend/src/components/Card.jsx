@@ -9,7 +9,7 @@ function Card({ employee }) {
       <div className="card-body">
         <h6 className="card-title">Pratiti Technologies</h6>
       </div>
-      <img src={image} className="card-img-top" />
+      <img src={image} className="card-img-top" style={{height: "10rem", objectFit: "cover", objectPosition: "center"}} />
       <div className="card-body">
         <h5 className="card-title">{employee.fullname}</h5>
         <p className="card-text">
