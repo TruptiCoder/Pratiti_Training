@@ -7,7 +7,7 @@ import { useRef } from "react";
 
 function Login() {
   const navigate = useNavigate();
-  const result = useRef();
+  const [result, setResult] = useState("");
   const updateUser = useStore((state) => state.updateUser);
 
   const api = "http://localhost:5050/auth/login";
@@ -19,14 +19,18 @@ function Login() {
 
   const handleSubmit =  async (e) => {
     e.preventDefault();
-    const res = await axios.post(api, input);
-    if (res.data.success) {
-      const userData = await axios.get(`http://localhost:5050/users/${input.email}`);
-      updateUser(userData.data);
-      navigate("/");
-    } else {
-      result.current.textContent = res.data.message;
-      return;
+    try {
+      const res = await axios.post(api, input);
+      if (res.data.success) {
+        const userData = await axios.get(`http://localhost:5050/users/${input.email}`);
+        updateUser(userData.data);
+        navigate("/");
+      } else {
+        setResult(res.data.message);
+        return;
+      }
+    } catch (err) {
+      setResult("Password or email is incorrect.");
     }
   };
 
@@ -66,7 +70,7 @@ function Login() {
 
       <input className="btn btn-primary" type="submit" value="Login" />
 
-      <span ref={result}></span>
+      <span className="text-danger">{result}</span>
     </form>
   );
 }
