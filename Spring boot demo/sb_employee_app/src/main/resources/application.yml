@@ -1,0 +1,23 @@
+server:
+ port: 2222
+
+logging:
+  level:
+    root: OFF
+    com.trupti: OFF
+  file:
+    name: logs/app.log
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql-trupti-truptibalbudhe-ems002.g.aivencloud.com:12235/defaultdb?ssl-mode=REQUIRED
+    password: paste_password_here
+    username: avnadmin
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQLDialect
